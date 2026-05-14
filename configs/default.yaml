@@ -1,0 +1,26 @@
+model:
+  weight_path: "weights/yolov8m.pt"
+  conf_threshold: 0.35
+  iou_threshold: 0.45
+
+video:
+  default_fps: 30
+  output_width: 960
+  output_height: 540
+
+speed:
+  distance_m: 10
+  line1:
+    start: [80, 250]
+    end: [880, 250]
+  line2:
+    start: [80, 340]
+    end: [880, 340]
+
+tracker:
+  max_lost_frames: 30
+  iou_threshold: 0.3
+
+web:
+  host: "127.0.0.1"
+  port: 8000
